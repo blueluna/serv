@@ -8,6 +8,7 @@ module servant_te0802
 
    parameter memfile = "zephyr_hello.hex";
    parameter memsize = 8192;
+   parameter compressed = 0;
 
    wire      clk;
    wire      rst;
@@ -24,7 +25,8 @@ module servant_te0802
 
    servant
      #(.memfile (memfile),
-       .memsize (memsize))
+       .memsize (memsize),
+       .compress (compressed))
    servant
      (.wb_clk (clk),
       .wb_rst (rst),

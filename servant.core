@@ -608,7 +608,7 @@ targets:
     default_tool: vivado
     description : Trenz Electronic TE0802
     filesets : [mem_files, soc, te0802]
-    parameters : [memfile, memsize]
+    parameters : [memfile, memsize, compressed]
     tools:
       vivado: {part : xczu2cg-sbva484-1-e}
     toplevel : servant_te0802
